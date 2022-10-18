@@ -11,7 +11,7 @@
 		85A6870128EC2521001CD385 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A6870028EC2521001CD385 /* ContentView.swift */; };
 		85A6870328EC2523001CD385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A6870228EC2523001CD385 /* Assets.xcassets */; };
 		85A6870628EC2523001CD385 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A6870528EC2523001CD385 /* Preview Assets.xcassets */; };
-		85A6870E28EC3765001CD385 /* RibbonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 85A6870D28EC3765001CD385 /* RibbonKit */; };
+		85B380E728FEA96200F6659E /* RibbonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 85B380E628FEA96200F6659E /* RibbonKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85A6870E28EC3765001CD385 /* RibbonKit in Frameworks */,
+				85B380E728FEA96200F6659E /* RibbonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 			);
 			name = RibbonSwiftUISample;
 			packageProductDependencies = (
-				85A6870D28EC3765001CD385 /* RibbonKit */,
+				85B380E628FEA96200F6659E /* RibbonKit */,
 			);
 			productName = RibbonSwiftUISample;
 			productReference = 85A686FB28EC2521001CD385 /* RibbonSwiftUISample.app */;
@@ -117,7 +117,7 @@
 			);
 			mainGroup = 85A686F228EC2521001CD385;
 			packageReferences = (
-				85A6870C28EC3765001CD385 /* XCRemoteSwiftPackageReference "ribbon-ios" */,
+				85B380E528FEA96200F6659E /* XCRemoteSwiftPackageReference "ribbon-ios" */,
 			);
 			productRefGroup = 85A686FC28EC2521001CD385 /* Products */;
 			projectDirPath = "";
@@ -355,7 +355,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		85A6870C28EC3765001CD385 /* XCRemoteSwiftPackageReference "ribbon-ios" */ = {
+		85B380E528FEA96200F6659E /* XCRemoteSwiftPackageReference "ribbon-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ribbontechnologies/ribbon-ios";
 			requirement = {
@@ -366,9 +366,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		85A6870D28EC3765001CD385 /* RibbonKit */ = {
+		85B380E628FEA96200F6659E /* RibbonKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 85A6870C28EC3765001CD385 /* XCRemoteSwiftPackageReference "ribbon-ios" */;
+			package = 85B380E528FEA96200F6659E /* XCRemoteSwiftPackageReference "ribbon-ios" */;
 			productName = RibbonKit;
 		};
 /* End XCSwiftPackageProductDependency section */
