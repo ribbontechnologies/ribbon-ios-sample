@@ -18,6 +18,7 @@ struct RibbonSwiftUISampleApp: App {
     
     var body: some Scene {
         WindowGroup {
+//            WithModifierView() // This view is using the SwiftUI modifier to show the study
             ContentView()
         }
     }

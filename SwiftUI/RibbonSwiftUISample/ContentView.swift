@@ -10,6 +10,7 @@ import RibbonKit
 import Combine
 
 struct ContentView: View {
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -19,15 +20,15 @@ struct ContentView: View {
         }
         .onAppear {
             // These are the different way the API can be used.
+            //
             // 1 Trigger and show attached to a new overlayed window managed by Ribbon
-            Ribbon.shared.trigger("YOUR_TRIGGER")
+            Ribbon.shared.triggerAndShow("YOUR_TRIGGER")
 
             // 2 Tigger with a callback state. Then manually show it. Optionally pass your own view controller, if nil, it will attach to new window.
 //            Ribbon.shared.trigger("YOUR_TRIGGER") { state in
 //                switch state {
 //                case .ready:
 //                    Ribbon.shared.show()
-////                    Ribbon.shared.show(from: UIApplication.shared.rootViewController!)
 //                case .noStudy:
 //                    break
 //                case .error(let error):
@@ -38,9 +39,9 @@ struct ContentView: View {
 //            }
 
             // 3 Same as 2 above, but with await async and throwing error. Wrap in a Task, or use .task for iOS15+
-//            Task.init() {
+//            Task {
 //                do {
-//                    let state = try await Ribbon.shared.triggerThrowing("YOUR_TRIGGER")
+//                    let state = try await Ribbon.shared.trigger("YOUR_TRIGGER")
 //                    switch state {
 //                    case .ready:
 //                        Ribbon.shared.show()
