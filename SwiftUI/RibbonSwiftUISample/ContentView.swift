@@ -11,40 +11,37 @@ import Combine
 
 struct ContentView: View {
     
+    @State private var isShowing: Bool = false
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, Ribbon!")
-        }
+        }.ribbonSheet(show: $isShowing)
         .onAppear {
-            // These are the different way the API can be used.
-            //
-            // 1 Trigger and show attached to a new overlayed window managed by Ribbon
-            Ribbon.shared.triggerAndShow("YOUR_TRIGGER")
+            // 1. Trigger with a callback state. Then manually show it.
+            Ribbon.shared.trigger("YOUR_TRIGGER") { state in
+                switch state {
+                case .ready:
+                    isShowing = true
+                case .noStudy:
+                    break
+                case .error(let error):
+                    print(error.localizedDescription)
+                @unknown default:
+                    break
+                }
+            }
 
-            // 2 Tigger with a callback state. Then manually show it. Optionally pass your own view controller, if nil, it will attach to new window.
-//            Ribbon.shared.trigger("YOUR_TRIGGER") { state in
-//                switch state {
-//                case .ready:
-//                    Ribbon.shared.show()
-//                case .noStudy:
-//                    break
-//                case .error(let error):
-//                    print(error.localizedDescription)
-//                @unknown default:
-//                    break
-//                }
-//            }
-
-            // 3 Same as 2 above, but with await async and throwing error. Wrap in a Task, or use .task for iOS15+
+            // 2. Same as 1 above, but with await async and throwing error. Wrap in a Task, or use .task for iOS15+
 //            Task {
 //                do {
 //                    let state = try await Ribbon.shared.trigger("YOUR_TRIGGER")
 //                    switch state {
 //                    case .ready:
-//                        Ribbon.shared.show()
+//                        isShowing = true
 //                    case .noStudy:
 //                        break
 //                    @unknown default:
