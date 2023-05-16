@@ -19,7 +19,7 @@ struct ContentView: View {
         }
         .padding()
         .onAppear {
-            // 1. Trigger with a callback closure. Then manually show it.
+            // 1. Trigger with a completion closure. Then manually show the survey.
             Ribbon.shared.trigger("YOUR_TRIGGER") { error in
                 if let error {
                     print(error.localizedDescription)
@@ -30,7 +30,7 @@ struct ContentView: View {
         }
 //        .task {
 //            // 2. Same as above, but with await/async and throwing error.
-//            // Wrap in a Task, or use the .task view modeifier for iOS 15+
+//            // Wrap in a Task, or use the .task view modifier for iOS 15+
 //            do {
 //                try await Ribbon.shared.trigger("YOUR_TRIGGER")
 //            }
