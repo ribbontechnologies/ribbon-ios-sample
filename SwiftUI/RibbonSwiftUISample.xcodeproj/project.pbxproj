@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8532062528FEF96400274C76 /* WithModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8532062428FEF96400274C76 /* WithModifierView.swift */; };
 		85A686FF28EC2521001CD385 /* RibbonSwiftUISampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A686FE28EC2521001CD385 /* RibbonSwiftUISampleApp.swift */; };
 		85A6870128EC2521001CD385 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A6870028EC2521001CD385 /* ContentView.swift */; };
 		85A6870328EC2523001CD385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A6870228EC2523001CD385 /* Assets.xcassets */; };
@@ -16,7 +15,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8532062428FEF96400274C76 /* WithModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithModifierView.swift; sourceTree = "<group>"; };
 		85A686FB28EC2521001CD385 /* RibbonSwiftUISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RibbonSwiftUISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A686FE28EC2521001CD385 /* RibbonSwiftUISampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonSwiftUISampleApp.swift; sourceTree = "<group>"; };
 		85A6870028EC2521001CD385 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			children = (
 				85A686FE28EC2521001CD385 /* RibbonSwiftUISampleApp.swift */,
 				85A6870028EC2521001CD385 /* ContentView.swift */,
-				8532062428FEF96400274C76 /* WithModifierView.swift */,
 				85A6870228EC2523001CD385 /* Assets.xcassets */,
 				85A6870428EC2523001CD385 /* Preview Content */,
 			);
@@ -148,7 +145,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8532062528FEF96400274C76 /* WithModifierView.swift in Sources */,
 				85A6870128EC2521001CD385 /* ContentView.swift in Sources */,
 				85A686FF28EC2521001CD385 /* RibbonSwiftUISampleApp.swift in Sources */,
 			);
