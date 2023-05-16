@@ -13,12 +13,11 @@ struct RibbonSwiftUISampleApp: App {
     
     init() {
         Ribbon.shared.configure(withID: "YOUR_RIBBON_ID")
-        Ribbon.shared.setPreview(true) // Use this for testing as otherwise the tigger will just be triggered once
+        Ribbon.shared.setPreview(true) // For testing purposes only, allows the survey to be triggered more than once
     }
     
     var body: some Scene {
         WindowGroup {
-//            WithModifierView() // This view is using the SwiftUI modifier to show the study
             ContentView()
         }
     }
